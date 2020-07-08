@@ -54,7 +54,7 @@ export function handler(incomingRequest:IScheduleUpdateRequest, context:Context,
 
         protected makePutSyntax() {
           return {
-            TableName: `_schedule-${ process.env.stage }`,
+            TableName: `_errors-${ process.env.stage }`,
             Item: this.request.item
           }
         }
